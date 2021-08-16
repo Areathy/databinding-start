@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cockpit',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CockpitComponent implements OnInit {
 
+  serverCreated = new EventEmitter<>
+  // blueprintCreated = new
   newServerName = '';
   newServerContent = '';
   
